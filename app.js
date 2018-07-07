@@ -1,6 +1,6 @@
-new vue({
-  el: "#app",
+var app = new Vue({
+  el: '#app',
   data: {
-    title: "Becoming a Vue Ninja"
+    message: 'Hello Vue!'
   }
-});
+})
