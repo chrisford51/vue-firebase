@@ -25,10 +25,10 @@ new Vue({
     changeWage(amount) {
       this.wage += amount;
     },
-    updateName(e) {
-      // console.log(e.target.value)
-      this.name = e.target.value
-    },
+    //   // updateName(e) {
+    //   //   // console.log(e.target.value)
+    //   //   this.name = e.target.value
+    // },
   }
 })
 

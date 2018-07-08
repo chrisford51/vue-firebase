@@ -40,8 +40,9 @@
         <button @click="logEvent">Log Event Info</button>
         <div class="canvas" @mousemove="logCoords">{{ coords.x }}, {{ coords.y }}</div>
         <h3>Hello {{ name }}</h3>
-        <input type="text" @keyup="updateName">
-        <input type="text" @keypress="updateName">
+        <!-- <input type="text" @keyup="updateName">
+        <input type="text" @keypress="updateName"> -->
+        <input type="text" v-model="name">
 
     </div>
 
