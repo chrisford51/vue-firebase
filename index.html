@@ -8,13 +8,13 @@
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
     <title>Vue Basics</title>
     <style>
-        /* .one {
+        .one {
             color: green;
         }
 
         .two {
             text-decoration: line-through;
-        } */
+        }
 
         .canvas {
             width: 300px;
@@ -29,6 +29,9 @@
     <h1>Vue Basics</h1>
     <div id="app">
         <h2>{{ title }}</h2>
+        <p>{{ greet('evening') }}</p>
+        <a v-bind:href="url">Youtube</a>
+        <div v-bind:class="classes">Classes from Instance</div>
         <p>I earn {{ wage }} dollars an hour.</p>
         <button v-on:click="changeWage(1)">Increase wage by $1</button>
         <button v-on:click="changeWage(-1)">Decrease wage by $1</button>
@@ -36,9 +39,10 @@
         <button v-on:dblclick="changeWage(-5)">Decrease wage by $5</button>
         <button @click="logEvent">Log Event Info</button>
         <div class="canvas" @mousemove="logCoords">{{ coords.x }}, {{ coords.y }}</div>
-        <!-- <p>{{ greet('evening') }}</p>
-        <a v-bind:href="url">Youtube</a>
-        <div v-bind:class="classes">Classes from Instance</div> -->
+        <h3>Hello {{ name }}</h3>
+        <input type="text" @keyup="updateName">
+        <input type="text" @keypress="updateName">
+
     </div>
 
     <script src="app.js"></script>
