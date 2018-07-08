@@ -12,6 +12,12 @@ new Vue({
     wage: 1,
     showName: false,
     showAge: true,
+    items: ['Mushroom', 'Green Shells', 'Red Shells', 'Banana', 'Star'],
+    ninjas: [
+      { name: 'Chris', age: 23, belt: 'Black', },
+      { name: 'Carol', age: 24, belt: 'Purple', },
+      { name: 'Elisa', age: 22, belt: 'White' }
+    ],
   },
   methods: {
     greet(time) {

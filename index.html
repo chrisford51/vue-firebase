@@ -52,6 +52,14 @@
         <p v-else-if="showAge">23</p>
         <button @click="toggleAge">ShowAge: {{ showAge }}</button>
 
+        <ul>
+            <li v-for="item in items">{{ item }}</li>
+        </ul>
+        <div v-for="(ninja, index) in ninjas">
+            <p>{{ index }} - {{ ninja.name }}</p>
+            <p>Age: {{ ninja.age }}</p>
+            <p>Belt Color: {{ ninja.belt }}</p>
+        </div>
     </div>
 
     <script src="app.js"></script>
