@@ -10,6 +10,8 @@ new Vue({
       y: 0
     },
     wage: 1,
+    showName: false,
+    showAge: true,
   },
   methods: {
     greet(time) {
@@ -32,8 +34,16 @@ new Vue({
     logMessage() {
       console.log('Hello World')
     },
+    toggleName() {
+      this.showName = !this.showName
+    },
+    toggleAge() {
+      this.showAge = !this.showAge
+    },
   }
 })
+
+
 
 
 // var app = new Vue({

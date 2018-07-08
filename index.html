@@ -46,6 +46,11 @@
         <button @click.alt="logMessage">Alt-Click Me</button>
         <button @click.shift="logMessage">Shift-Click Me</button>
         <a href="http://www.google.com" @click.prevent="logMessage">Google</a>
+        <br>
+        <p v-if="showName">Chris</p>
+        <button @click="toggleName">ShowName: {{ showName }}</button>
+        <p v-else-if="showAge">23</p>
+        <button @click="toggleAge">ShowAge: {{ showAge }}</button>
 
     </div>
 
