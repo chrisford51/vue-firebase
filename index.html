@@ -43,6 +43,9 @@
         <!-- <input type="text" @keyup="updateName">
         <input type="text" @keypress="updateName"> -->
         <input type="text" v-model="name">
+        <button @click.alt="logMessage">Alt-Click Me</button>
+        <button @click.shift="logMessage">Shift-Click Me</button>
+        <a href="http://www.google.com" @click.prevent="logMessage">Google</a>
 
     </div>
 
